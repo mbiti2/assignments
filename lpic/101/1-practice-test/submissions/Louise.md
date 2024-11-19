@@ -1,6 +1,7 @@
  ## Section 1:System Architecture 
 1.  B
-2.  BIOS is a firmware that boots system from the first sector of the hard disk called MBR while UEFI uses a spefic partition to boot the system
+2.  BIOS is a firmware that boots system from the first sector of the hard disk called MBR while UEFI uses a spefic partition to boot the system.
+   -The BIOS supports a maximum of 2TB disk space while UEFI supports a maximum of 16TB.
 3. ```lsmod``` run the command ```modprobe dummy``` to load the new module
 4. /proc directory in linux is the directory that stores information about the cpu memory and the /sys directory stores systerm information
  ## Section 2:Linux installation and Package Management 
@@ -26,6 +27,12 @@
     . run the commend ```mkfs.ext4 "diskname"``` to create an ext4 filesystem on the disk
     . run the command ```mount -t "fs type" "diskname" /data```
 18. /etc/fstab is a file that stores configuration for the file system table. it shows the filesystem, mountpoint, types etc.
-        
+
     
+        
+    ## Bonus Question
+    - post
+    - Bootloader is being loaded
+    - Bootloader loads the kernel and starts it initialisation
+    - init program start the service. 
     
